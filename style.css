@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding: 30px;
+}
+
+#puzzle-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 2px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.tile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+#win-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+}
